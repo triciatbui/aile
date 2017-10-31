@@ -383,7 +383,7 @@ color: #ffffff;
 
 /*start PATAGONIA article - two sections*/
 .image_1 {
-  	grid-row: 2 / 29;
+  	grid-row: 2 / 12;
   	grid-column: 1 / 7;
 	background-image: url(img/IMG_0929-2.jpg);
 	background-repeat: no-repeat;
@@ -392,7 +392,7 @@ color: #ffffff;
 	flex-direction: column;
 }
 .headlines{
-	grid-row: 27/28;
+	grid-row: 12/22;
 	grid-column: 2 / 7;
 }
 .patagonia_article_section {
@@ -401,11 +401,11 @@ color: #ffffff;
 	padding-left: 15px;
 }
 .article_1 {
-	grid-row: 31 / 50;
+	grid-row: 13 / 18;
   	grid-column: 3 / 6;
 }
 .image_2{
-	grid-row: 51 / 89;
+	grid-row: 19 / 26;
 	grid-column: 1 / 7;
 	background-image: url(img/Patagonia,+Torres+del+Paine,+Chile.jpeg);
 	background-repeat: no-repeat;
@@ -414,12 +414,12 @@ color: #ffffff;
 	flex-direction: column;
 }
 .artcle_2{
-	grid-row: 93 / 96;
+	grid-row: 27 / 30;
 	grid-column: 3 / 6;
 	line-height: 200%;
 }
 .image_3{
-	grid-row: 98 / 130;
+	grid-row: 31 / 35;
 	grid-column: 1 / 7;
 	background-image: url(img/88547205.jpg);
 	background-repeat: no-repeat;
@@ -429,11 +429,11 @@ color: #ffffff;
 	scroll-behavior: smooth;
 }
 .article_3{
-	grid-row: 132 / 150;
+	grid-row: 36 / 39;
 	grid-column: 3 / 6;
 }
 .image_4{
-	grid-row: 151 / 194;
+	grid-row: 40 / 45;
 	grid-column: 1 / 7;
 	background-image: url(img/EcoCamp-Patagonia-1-CampLuxe-Camp-Trend.jpg);
 	background-repeat: no-repeat;
@@ -443,13 +443,13 @@ color: #ffffff;
 	scroll-behavior: smooth;
 }
 .credits{
-	grid-row: 32 / 32;
+	grid-row: 13 / 14;
   	grid-column: 2 / 3;
 	
 }
 
 .footer {
-  	grid-row: 195 / 198;
+  	grid-row: 46 / 49;
   	grid-column: 1 / 7;
 	display: flex;
 }
