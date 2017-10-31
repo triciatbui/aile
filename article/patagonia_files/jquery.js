@@ -37,30 +37,3 @@ $('nav a').click(function(event) {
     event.preventDefault();
 });
 
-//----------------------------
-//----------------------------
-
-// horizontal scroll 
-jQuery(document).ready(function ($) {
-    var height = 9000;
-
-    $.jInvertScroll(['.scroll'], {
-        height: height
-    });
-
-    $('.navigation').find('a').on('click', function(e) {
-        e.preventDefault();
-
-        $('.navigation').find('a').removeClass('active');
-        $(this).addClass('active');
-
-        var slide = $(this).data('slide');
-        var slidePos = $('#'+slide).position().left;
-
-        var percent = slidePos / $('#postcards').width() * 100;
-
-        $('html,body').animate({
-            scrollTop: height / 100 * percent
-        });
-    });
-});
