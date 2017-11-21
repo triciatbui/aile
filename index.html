@@ -1,162 +1,99 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>NIVA</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="grid.css" rel="stylesheet" type="text/css">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
-<link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display:100,400,400i,700" rel="stylesheet">
-<!--stuff for header from sticky header-->
-<link href='style.css' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="jquery.js"></script>
-<!--stuff for header from sticky header end-->
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Thimble Framework</title>
+    
+    <link rel="stylesheet" href="css/thimble.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-<!--start of sticky header html-->
-<header class="main_h">
+<body>	
+<!--background video-->
+<div class="container-fluid video-container">
+	<video autoplay muted loop>
+		<source src="videos/Painting_big.mp4" type="video/mp4">
+		Your browser does not support HTML5 video.
+	</video>
+</div>
 
-    <div class="row">
-        <a href="index.html">
-        	<img class="logo" src="img/niva_brown_logo.png" alt="niva-logo">
-        </a>
-
-        <div class="mobile-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="article/destination.html">Destinations</a></li>
-                <li><a href="feature3.html">Glamping Styles</a></li>
-                <li><a href="#">Fashion</a></li>
-                <li><a href="#">Essentials</a></li>
-            </ul>
-        </nav>
-
-    </div> <!-- / row -->
-
-</header>
-<!--end of sticky header html-->
-
-<div class="container">
- 	
- 	<!--start hero img + cta #1-->
-  	<div class="item hero">
-			<h1 class="hero_headline text_shadow">The best thing to<br>throw your money at.</h1>
-		<button class="buttons" type="button" onclick="alert('#privilege')">Live Large now</button>
-  	</div>
-  	<!--end hero-->
-  	
-	<!--mission statement-->
-	<div class="mission">
-		<p class="p_feature">NIVA promises to provide the amazing experience of the great outdoors right at your fingertips, but keeps nature far enough away so you don't have to sacrifice any luxury. With glamorous accommodations and overpriced facilities, you can bet this camping experience is authentic. There isn't a better way to spend ridiculous amounts of money than glamping with NIVA.</p>
-	</div>
-	<!--end mission statement-->
-  	
-  	
-  	<!--start article content = two sections-->
-	<div class="destination_header">
-		<h2>destinations</h2>
-	</div>
-	<div class="hvrbox hvrbox_background_1 article_1">
-		<div class="hvrbox-layer_top">
-			<div class="hvrbox-text">
-				<div class="h3">Mysterious &amp; Cozy</div><br>
-				<div class="h4">The Secret Garden in Auckland, New Zealand</div><br>
-				<div class="p">Experience the $9000 tent that probably looks like a miniature version of your home. Have the luxuries of this green garden only a couple steps away, even though you'll probably not step out of your "tent", you'll get pretty pictures.</div>
-			</div>
-		</div>
-	</div>
-	<div class="hvrbox hvrbox_background_2 article_2">
-		<div class="hvrbox-layer_top">
-			<div class="hvrbox-text">
-				<div class="h3">Luxurious Romance</div><br>
-				<div class="h4">Tree Hut in Walhalla, <br>South Carolina</div><br>
-				<div class="p">Getting paid in the 6 digits weighing you down? Eating too much gourmet food? Get rid of that flexible schedule, and change it up with a trip to the great outdoors - away from it all.</div>
-			</div>
-		</div>
-	</div>
-	<!--end article content-->
-	<div class="advert_header">
-		<h2>Sponsored by Louis Vuitton</h2>
-	</div>
-	
-	<!--horizontal scroll?-->
-	<div class="editorials">
-		<div class="h3">Hit the Outdoors in Style</div><br>
-		<div class="h4">Editorial Picks</div><br>
-		<div class="p">Love the fresh air and the great outdoors? We've selected only the best<br>to help you prepare to look your best for the camera in nature, although<br>not quite prepared for nature...</div>
-		<br><br>
-		<button class="buttons" type="button" onclick="alert('#privilege')">Read More</button>
-	</div>
-	
-  	<!--start article content = two sections-->
-	<div class="blog_header">
-		<h2>styles</h2>
-	</div>
-	<div class="hvrbox hvrbox_background_3 blog_1">
-		<div class="hvrbox-layer_top">
-			<div class="hvrbox-text">
-				<div class="h3">Stay Chill</div><br>
-				<div class="p">explore icy ruins of Lochcastle</div>
-			</div>
-		</div>
-	</div>
-	<div class="hvrbox hvrbox_background_4 blog_2">
-		<div class="hvrbox-layer_top">
-			<div class="hvrbox-text">
-				<div class="h3">Dip Low</div><br>
-				<div class="p">making summer stay</div>
-			</div>
-		</div>
-	</div>
-	<div class="hvrbox hvrbox_background_5 blog_3">
-		<div class="hvrbox-layer_top">
-			<div class="hvrbox-text">
-				<div class="h3">Cool Nights</div><br>
-				<div class="p">count the stars like you do money</div>
-			</div>
-		</div>
-	</div>
-	<!--end article content-->
- 	<!--easy side scrolling here // add other pictures after-->
-  	<div class="ads">
- 		<div class="h3">Travel with the Best</div><br>
-		<div class="h4">Drive Smooth with Aston Martin</div><br>
-		<div class="p">Look flashy in the sleek and trendy Aston Martin.<br>This is the only car that will bring you to your glamping destination in style.<br>Otherwise, you may be a laughing...</div>
-		<br><br>
-		<a href="feature2.html"><button class="buttons" type="button">Read More</button></a>
-	</div>
-  	<div class="footer">
-  		<div class="footer_content">
-			<a href="#">About Us</a><br>
-			<a href="#">Contact</a><br>
-			<a href="#">Privacy</a><br>
-			<a href="#">Terms of Use</a>
-		</div>
-		<div class="footer_content">
-			<a href="#">Destinations</a><br>
-			<a href="#">Glamping Styles</a><br>
-			<a href="#">Fashion</a><br>
-			<a href="#">Essentials</a>
-		</div>
-		<div class="footer_content">
-			<form class="form" action="/action_page.php">
-				<textarea class="input" rows="2" cols="50">name</textarea><br><br>
-				<textarea class="input" rows="2" cols="50">email</textarea><br><br>
-				<input class="buttons" type="submit" value="SUBSCRIBE">
-			</form> 
-		</div>
-		<form class="search-container">
-    		<input type="text" id="search-bar" placeholder="search">
-    		<a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
-  		</form>
+<!--hero images copy content-->	
+<div class="container center small-padding-top m">
+	<div class="row column align-center">
+		<div class="cell headline vw">ailé</div>
+		<div class="cell">
+			<div class="v-line"></div>
+		</div><br>
+	  	<div class="cell headline-description text-center">
+			A trusted source for your child's cognitive,<br>language, sensory and motor development.
+		</div><br><br>
+		<img src="images/issue_circle.png" alt="issues">
 	</div>
 </div>
+
+<!--3 panel age navigation section--> 
+<div class="container medium-padding-top small-padding-bottom">
+	<div class="row">
+  		<div class="cell"><img src="images/toddler.jpeg" alt="toddler"></div>
+  		<div class="cell"><img src="images/preschool.jpeg" alt="preschool"></div>
+  		<div class="cell"><img src="images/middle_childhood.jpeg" alt="middle childhood"></div>
+	</div>
+</div>
+
+<!--horizontal rule-->
+<hr class="ten"/>
+	
+	
+<!--article stories using cards-->
+<div class="container row small-padding-top">
+	<div class="cell six">
+		<div class="card">
+			<div class="card-image">
+				<img src="images/toddler.jpeg" alt="#"/>
+			</div>
+			<div class="card-content">
+				<span class="card-title">Image Card</span>
+				<p>This is my card, there are many like it but this one is mine.</p>
+			</div>
+			<div class="card-actions text-right">
+				<a href="#">Action 1</a>
+			</div>
+		</div>
+	</div>
+	<div class="cell six">
+		<div class="cell six">
+			<div class="card">
+				<div class="card-image">
+					<img src="images/toddler.jpeg" alt="#"/>
+				</div>
+				<div class="card-content">
+					<span class="card-title">Image Card</span>
+					<p>This is my card, there are many like it but this one is mine.</p>
+				</div>
+				<div class="card-actions text-right">
+					<a href="#">Action 1</a>
+				</div>
+			</div>
+		</div>
+		<div class="cell six">
+			<div class="card">
+				<div class="card-image">
+					<img src="images/toddler.jpeg" alt="#"/>
+				</div>
+				<div class="card-content">
+					<span class="card-title">Image Card</span>
+					<p>This is my card, there are many like it but this one is mine.</p>
+				</div>
+				<div class="card-actions text-right">
+					<a href="#">Action 1</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	
 </body>
+
 </html>

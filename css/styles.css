@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container {
+	max-width:1280px; 
+	margin:auto;
+}
+.container-fluid {
+	width:100%;
+}
+/*----------------------------------hero background video positioning and size----------------------------------------*/
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/*----------------------------------------------positioning styles------------------------------------------------*/
+.center {
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+}
+.small-padding-top {
+	padding-top: 5%; 
+}
+.medium-padding-top {
+	padding-top: 15%; 
+}
+.large-padding-top {
+	padding-top: 25%; 
+}
+.small-padding-bottom {
+	padding-bottom: 5%; 
+}
+.medium-padding-bottom {
+	padding-bottom: 15%; 
+}
+.large-padding-bottom {
+	padding-bottom: 25%; 
+}
+/*-----------------------------------------------flourishes-------------------------------------------------------*/
+.v-line {
+    width: 2px;
+    height: 80px;
+    margin: 18px auto;
+    background: #ffffff;
+}
+/*----------------------------------------------------text styles--------------------------------------------------*/
+.headline {
+	font-size: 8rem;
+	color: white; 
+}
+.headline-description {
+	font-size: 2rem;
+	color: white; 
+	font-style: italic; 
+}
+
+
+@media only screen and (max-width: 40em) {
+
+}
