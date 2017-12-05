@@ -227,6 +227,10 @@ input[type="submit"]:hover {
 .large-padding-right {
 	padding-right: 25%; 
 }
+.flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
 /*-----------------------------------------------flourishes-------------------------------------------------------*/
 .v-line {
     width: 2px;
@@ -274,8 +278,7 @@ input[type="submit"]:hover {
 	font-weight: 700;
 }
 .white {
-	color: white; 
-	letter-spacing: 0.05rem; 
+	color: white;  
 }
 .activities-header {
 	font-weight: 500;
@@ -290,8 +293,13 @@ input[type="submit"]:hover {
 .justify {
 	text-align: justify;
 }
-
-/*----------------------------------------------b&w photo to color on hover--------------------------------------------------*/
+.question {
+	color: #9BA9BB;
+	font-size: 0.75rem; 
+	text-transform: uppercase; 
+}
+/*----------------------------------------------hover styles--------------------------------------------------*/
+/*b&w hover states on activities panel*/
 #toddler-background img, #preschooler-background img, #middlechildhood-background img {
    -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
@@ -306,7 +314,45 @@ input[type="submit"]:hover {
    -ms-filter: none;
    filter: none;
 }
-
+/*hover states for activities buttons*/
+.activities-button-orange {
+	color: #F2A66B;
+}
+.activities-button-yellow {
+	color: #F2C766;
+}
+.activities-button-red {
+	color: #EE7261;
+}
+.activities-button-orange:hover, .activities-button-yellow:hover, .activities-button-red:hover {
+	/*color: #eaeaea;*/
+	color: white; 
+}
+/*border styles for ^ box*/
+.activities-box-orange { 
+	border: 2px solid #F2A66B;
+    padding: 10px;
+	border-radius: 1px; 
+}
+.activities-box-yellow { 
+	border: 2px solid #F2C766;
+    padding: 10px;
+	border-radius: 1px; 
+}
+.activities-box-red { 
+	border: 2px solid #EE7261;
+    padding: 10px;
+	border-radius: 1px; 
+}
+.activities-box-orange:hover {
+	background: #F2A66B;
+}
+.activities-box-yellow:hover {
+	background: #F2C766;
+}
+.activities-box-red:hover {
+	background: #EE7261;
+}
 /*---------------------------------------------- photo backgrounds--------------------------------------------------*/
 .sensory-hero {
 	width: 100%;
@@ -314,18 +360,30 @@ input[type="submit"]:hover {
 	background-image: url(../images/sensory_hero.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-top: -200px; 
 }
-
+.play-hero {
+	width: 100%;
+	height: 800px; 
+	background-image: url(../images/play_image_1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sissy-hero {
+	width: 100%;
+	height: 800px; 
+	background-image: url(../images/IMG_0225.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 /*----------------------------------------------CTAs--------------------------------------------------*/
 .rectangle-box {
 	width: 100%;
-	height: 219px; 
+	height: 170px; 
 	background-color: #4A5864;
 }
 .subscribe {
 	width: 100%;
-	height: 720px; 
+	height: 780px; 
 	background-color: #A0C2BA; 
 	color: white; 
 }
@@ -333,7 +391,7 @@ input[type="submit"]:hover {
 /*div background*/
 .background {
 	width: 100%;
-	height: 720px; 
+	height: 100vh; 
 }
 .practice-it {
 	width: 100%; 
@@ -344,7 +402,7 @@ input[type="submit"]:hover {
 }
 /*pink background color*/
 .pink-background {
-	background-color: #F9E4E1;
+	background-color: #A0C2BA;
 }
 /*orange background color*/
 .orange-background {
@@ -358,7 +416,9 @@ input[type="submit"]:hover {
 .red-background {
 	background-color: #EE7261;
 }
-
+.lightgray-background {
+	background-color: #BBBCBF;
+}
 /*----------------------------------------------footer--------------------------------------------------*/
 .footer {
 	width: 100%;
