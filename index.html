@@ -2,21 +2,119 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	
-<title>pare</title>
+<title>rise</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="grid.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-	
-<link href="css/styles.css" rel="stylesheet" type="text/css">
-	
+<link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display:100,400,400i,700" rel="stylesheet">
+<!--stuff for header from sticky header-->
+<link href='style.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<!--stuff for header from sticky header end-->
 </head>
 
 <body>
+<!--start of sticky header html-->
+<header class="main_h">
+
+    <div class="row">
+        <a href="index.html">
+        	<img class="logo" src="img/rise-logo.png" alt="rise-logo">
+        </a>
+
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </nav>
+
+    </div> <!-- / row -->
+
+</header>
+<!--end of sticky header html-->
+
+<div class="container">
+ 	
+	<!-- Slideshow container source: https://codepen.io/jlnljn/pen/XMQrXW-->
+	<div class="hero">
+		<div class="blue" id="box"></div>
+	</div>
+  	
+	<!--mission statement-->
+	<div class="mission">
+		<p class="p-feature">Rise is on a mission to empower tactile learners and promote universally accessible design. With over 285 million people worldwide who are visually impaired, less than 10% of that demographic knows braille. Our goal is to rise braille literacy with an accessible, affordable and portable platform to learning braille, and provide valued social currency among this population.</p>
+	</div>
+	<!--end mission statement-->
+  	
+  	
+  	<!--start article content = two sections-->
+	<div class="product_header">
+		<p>product ecosystem</p>
+	</div>
 	
-	<a href="design-systems.html">
-		<div id="homepage">
-			<img src="img/pare-page-1.png" alt="homepage"/>
+	<div class="product_ecosystem">
+	</div>
+  	<!--start article content = two sections-->
+	<div class="hvrbox hvrbox_background_3 blog_1">
+		<div class="hvrbox-layer_top">
+			<div class="hvrbox-text">
+			</div>
 		</div>
-	</a>
+	</div>
+	<div class="hvrbox hvrbox_background_4 blog_2">
+		<div class="hvrbox-layer_top">
+			<div class="hvrbox-text">
+			</div>
+		</div>
+	</div>
+	<div class="hvrbox hvrbox_background_5 blog_3">
+		<div class="hvrbox-layer_top">
+			<div class="hvrbox-text">
+			</div>
+		</div>
+	</div>
+	<!--end article content-->
+ 	<!--easy side scrolling here // add other pictures after-->
+	
+	<div class="cta">
+		<p>Let's rise literacy.</p>
+		<button class="buttons" type="button" onclick="alert('#risingliteracy')">ORDER NOW</button>
+	</div>
+  	
+  	<div class="footer">
+  		<div class="footer_content">
+			<a href="#" class="white">HOME</a><br>
+			<a href="#" class="white">PRODUCT</a><br>
+			<a href="#" class="white">CONTACT</a><br>
+			<a href="#" class="white">ABOUT</a>
+		</div>
+		<div class="footer_content">
+			<a href="#" class="white">TERMS</a><br>
+			<a href="#" class="white">RESEARCH</a><br>
+			<a href="#" class="white">BLOG</a><br>
+		</div>
+		<div class="footer_content">
+			<form class="form" action="/action_page.php">
+				<textarea class="input" rows="2" cols="50">name</textarea><br><br>
+				<textarea class="input" rows="2" cols="50">email</textarea><br><br>
+				<input class="buttons" type="submit" value="SUBSCRIBE">
+			</form> 
+		</div>
+		<form class="search-container">
+    		<input type="text" id="search-bar" placeholder="search">
+    		<a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+  		</form>
+	</div>
+</div>
 </body>
 </html>
